@@ -260,6 +260,11 @@ while (users[0].weight < 50) {
   console.log("Underweight");
 }
 
+users.map((eachUser) => {
+console.log(eachUser.name)
+
+})
+
 // array methods 
 
 let phones = ["Nokia", "Samsung", "Tecno"]
