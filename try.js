@@ -370,3 +370,9 @@ let changeTexts = () => {
 btns.addEventListener('click', changeText);
 
 btn.addEventListener('click', changeTexts)
+
+// add class 
+// remove class
+// create element
+// remove element
+// loop through an element
