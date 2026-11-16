@@ -58,21 +58,24 @@ const users = [
     course: "Techmaster",
     career: "Software Engineer",
     gender: "Female",
-    weight: "67",
+    weight: 67,
+    age:12,
   },
   {
     name: "Adebayo faith",
     course: "Full Stack",
     career: "Cyber Security",
     gender: "Male",
-    weight: "34",
+    weight: 34,
+    age: 20,
   },
   {
     name: "Ogunleye Maryam",
     course: "UI/UX Design",
     career: "Data Anlysis",
     gender: "Female",
-    weight: "17",
+    weight: 17,
+    age: 45,
   },
   
 ];
@@ -230,7 +233,8 @@ users.push({
     course: "Frontend Designer",
     career: "Tailor",
     gender: "Male",
-    weight: "54",
+    weight: 54,
+    age: 9,
   }  
   )
 
@@ -253,12 +257,7 @@ for (let i = 0; i < 20; i++){
   console.log(`${i} is an odd number`)
 }
 }
-
-// while
-
-while (users[0].weight < 50) {
-  console.log("Underweight");
-}
+// loop
 
 users.map((eachUser) => {
 console.log(eachUser.name)
@@ -310,4 +309,58 @@ menRied.map((lets) => {
   console.log(lets)
  })
 
- 
+
+
+
+let specAge = users.filter(eachUser => eachUser.weight <= 18)
+
+console.log(specAge)
+
+
+  //  Assignment
+//dom manipulation
+// .1. connect html to javascript
+// .2. get element from html
+// .3. make button be clickable
+
+let greet = document.getElementById("greet");
+
+greet.textContent = "Welcome Everyone!";
+
+
+let dodo = document.getElementById("body")
+
+dodo.style.backgroundColor = "wheat";
+dodo.style.color = "purple";
+dodo.style.fontFamily = "times new romans";
+greet.style.textAlign = "center";
+
+let btn = document.getElementById("btn1");
+
+btn.style.padding = "9px";
+ btn.style.backgroundColor = "chocolate";
+ btn.style.color = "white";
+ btn.style.border = "double"
+
+ let id = document.getElementById("tg");
+ let id1 = document.getElementById("b");
+ let id2 = document.getElementById("m");
+ let id3 = document.getElementById("f");
+ let id4 = document.getElementById("c");
+ let id5 = document.getElementById("s");
+
+console.log(id)
+console.log(id1)
+console.log(id2)
+console.log(id3)
+console.log(id4)
+console.log(id5)
+
+const btns = document.querySelector("#btn");
+
+const changeText = () => {
+  greet.textContent = "You are amazing!";
+  greet.style.color = "blue"
+}
+
+btns.addEventListener('click', changeText);

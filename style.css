@@ -1,0 +1,18 @@
+*{
+     margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+#body{
+    background-color: rgb(76, 129, 243);
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#greet{
+ text-align: end;   
+}
+#btn1{
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 0px;
+}
