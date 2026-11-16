@@ -362,5 +362,11 @@ const changeText = () => {
   greet.textContent = "You are amazing!";
   greet.style.color = "blue"
 }
+let changeTexts = () => {
+  greet.textContent = "Welcome Everyone!";
+  greet.style.color = "cyan"
+}
 
 btns.addEventListener('click', changeText);
+
+btn.addEventListener('click', changeTexts)
